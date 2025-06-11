@@ -1,12 +1,14 @@
-import React from "react";
 import { createRoot } from "react-dom/client";
+import './index.css';
 
 const App = () => {
   return (
-    <main>
-      <h1>Meu PWA com React</h1>
-      <p>Funciona como SPA com suporte a PWA.</p>
-    </main>
+<div className="container">
+  <h1>Bem-vindo ao Meu Site</h1>
+  <p>Essa é a página inicial da aplicação. Aproveite a experiência!</p>
+  <a href="/sobre" className="button">Saiba Mais</a>
+</div>
+
   );
 };
 

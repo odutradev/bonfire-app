@@ -1,0 +1,87 @@
+/* index.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis de cor */
+:root {
+  --primary-color: #4f46e5;
+  --background-color: #f9fafb;
+  --text-color: #111827;
+  --secondary-text-color: #6b7280;
+  --button-color: #6366f1;
+  --button-hover: #4338ca;
+  --border-radius: 8px;
+}
+
+/* Fonte e base */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Container centralizado */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Cabeçalho principal */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Parágrafo de introdução */
+p {
+  font-size: 1.125rem;
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Botão principal */
+.button {
+  display: inline-block;
+  background-color: var(--button-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+}
+
+/* Responsividade simples */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+}
