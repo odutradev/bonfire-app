@@ -4,9 +4,7 @@ import './index.css';
 const App = () => {
   return (
 <div className="container">
-  <h1>Bem-vindo ao Meu Site</h1>
-  <p>Essa é a página inicial da aplicação. Aproveite a experiência!</p>
-  <a href="/sobre" className="button">Saiba Mais</a>
+  <h1>Bem-vindo ao Meu App PWA</h1>
 </div>
 
   );
